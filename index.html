@@ -1,15 +1,53 @@
-<html>
-	<head>	
-			<link href="css/index.css" rel="stylesheet" type="text/css" />
-	</head>
-		<body>
-			
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>UI Parser Tool</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<!--<script type="text/javascript" src="js/typed.min.js"></script>-->
-	<script type="text/javascript" src="js/index.js"></script>
-</body>
-
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+        <a class="navbar-brand" href="#">UI Parser Tool</a>
+        <div class="pull-right">
+            <button class="btn btn-info" id="clear" type="button">Clear</button>
+            <button class="btn btn-info" id="triggerParseModal" type="button">Parse JSON Code</button>
+        </div>
+    </nav>
+      
+    <div class="container" id="workspace">
+    </div>
+      
+    <!-- MODAL -->
+    <div class="modal fade" id="parseModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Insert JSON Code</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <textarea class="form-control" id="jsonTextArea" rows="15"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" id="parseBtn">Parse</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/index.js"></script>
+  </body>
 </html>
