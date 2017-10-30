@@ -43,6 +43,8 @@ $(document).ready(function() {
             y = textFields[i].yPos;
             createTextField(text, width, height, x, y);
         }
+
+        $("#parseModal").modal('toggle');
     });
 });
 
